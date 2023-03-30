@@ -6,6 +6,7 @@
 
 import java.util.Scanner;
 
+
 public class task1 {
 
     public static void main(String[] args) {
@@ -25,5 +26,5 @@ public class task1 {
             return 1;
         else
             return a * Number1(a - 1);
-    }
+}
 }

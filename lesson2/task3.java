@@ -2,7 +2,6 @@ package lesson2;
 
 import java.util.logging.*;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class task3 {
@@ -26,9 +25,10 @@ public class task3 {
     }
 
     static String Operations(Logger logger) {
-        Scanner scan = new Scanner(System.in);
-        String operations = scan.nextLine();
-        return operations;
+        try (Scanner scan = new Scanner(System.in)) {
+			String operations = scan.nextLine();
+			return operations;
+		}
     }
 
     static int getResult(String opr, int num1, int num2, Logger logger) {

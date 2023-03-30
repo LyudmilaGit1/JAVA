@@ -19,9 +19,10 @@ public class task3 {
     }
 
     static String Operations() {
-        Scanner scan = new Scanner(System.in);
-        String operations = scan.nextLine();
-        return operations;
+        try (Scanner scan = new Scanner(System.in)) {
+            String operations = scan.nextLine();
+            return operations;
+        }
     }
 
     static int getResult(String opr, int num1, int num2) {

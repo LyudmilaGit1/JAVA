@@ -12,13 +12,17 @@ public class task4 {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите результат: ");
         int r = iScanner.nextInt();
+        System.out.printf("Введите десятки первого числа: ");
+        int l = iScanner.nextInt();
+        System.out.printf("Введите еденицы второго числа: ");
+        int c = iScanner.nextInt();
 
         int count = 0;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                if (20 + i + j * 10 + 5 == r) {
+                if (l * 10 + i + j * 10 + c == r) {
                     count += 1;
-                    System.out.println(count + ") 2" + i + " + " + j + "5" + " = " + r);
+                    System.out.println(count + ")" + l + i + " + " + j + c + " = " + r);
                     iScanner.close();
                 }
             }
