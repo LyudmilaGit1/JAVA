@@ -1,7 +1,7 @@
 // Реализовать алгоритм сортировки слиянием
 package lesson3;
 import java.util.Arrays;
-import java.util.Random;
+
 
 public class task3 {
     public static void main(String args[]) {

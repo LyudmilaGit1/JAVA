@@ -2,15 +2,18 @@
 //Вывести все простые числа от 1 до 1000
 
 public class task2 {
-
     public static void main(String[] args) {
-
-        for (int a = 2; a < 1000; a++) {
-            if ((a % 7 == 0 && a % 2 == 0) && (a % 3 == 0 && a % 5 == 0)) {
-
-                System.out.printf(" %s,", a);
+        int number = 1000;
+        int counter = 0;
+        System.out.printf("Простые числа в диапозоне от 1 до %d:\n", number);
+        for (int i = 2; i <= number; i++) {
+            for (int j = 2; j <= i; j++) {
+                if (i % j == 0) counter++;
             }
+            if (counter == 1) {
+                System.out.println(i);
+            } 
+            counter = 0;
         }
-
     }
 }
