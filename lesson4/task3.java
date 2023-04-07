@@ -78,8 +78,7 @@ public class task3 {
             System.out.println("Работаем с результатом " + list.getLast());
         }
     }
-
- 
+   
     public static double calculation(double num1, double num2, String oper) {
         double result = 0.0;
         switch (oper.toLowerCase()) {
