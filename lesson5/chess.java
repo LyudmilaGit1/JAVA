@@ -1,4 +1,4 @@
-package total;
+package lesson5;
 
 
 public class chess {
